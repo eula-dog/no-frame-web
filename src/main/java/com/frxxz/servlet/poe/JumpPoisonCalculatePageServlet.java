@@ -1,4 +1,4 @@
-package com.frxxz.servlet;
+package com.frxxz.servlet.poe;
 
 
 import jakarta.servlet.ServletException;
@@ -20,7 +20,7 @@ public class JumpPoisonCalculatePageServlet extends HttpServlet {
 
         //posioncalculate.jsp
         //posioncalculate.jsp
-        req.getRequestDispatcher("/pages/posioncalculate.jsp").forward(req, resp);
+        req.getRequestDispatcher("/pages/poe/posioncalculate.jsp").forward(req, resp);
 
 
 

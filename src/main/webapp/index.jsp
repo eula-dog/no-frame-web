@@ -16,5 +16,7 @@
 <br>
 <br>
 <button onclick="window.location.href='http://localhost:8080/frxxz/jump-poisoncalculate-page'">Poison Calculate</button>
+<br>
+<button onclick="window.location.href='http://localhost:8080/frxxz/jump-schedule-page'">schedule</button>
 </body>
 </html>

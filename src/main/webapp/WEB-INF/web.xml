@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>JumpPoisonCalculatePageServlet</servlet-name>
-        <servlet-class>com.frxxz.servlet.JumpPoisonCalculatePageServlet</servlet-class>
+        <servlet-class>com.frxxz.servlet.poe.JumpPoisonCalculatePageServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>JumpPoisonCalculatePageServlet</servlet-name>
@@ -15,13 +15,38 @@
 
     <servlet>
         <servlet-name>PoisonCalculateServlet</servlet-name>
-        <servlet-class>com.frxxz.servlet.PoisonCalculateServlet</servlet-class>
+        <servlet-class>com.frxxz.servlet.poe.PoisonCalculateServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>PoisonCalculateServlet</servlet-name>
-        <url-pattern>/poisoncalculate</url-pattern>
+        <url-pattern>/poe/poisoncalculate</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ScheduleHomePageServlet</servlet-name>
+        <servlet-class>com.frxxz.servlet.schedule.ScheduleHomepageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScheduleHomePageServlet</servlet-name>
+        <url-pattern>/jump-schedule-page</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ReturnToHomepage</servlet-name>
+        <servlet-class>com.frxxz.servlet.common.ReturnToHomepageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReturnToHomepage</servlet-name>
+        <url-pattern>/common/return_to_homepage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ScheduleFormSubmit</servlet-name>
+        <servlet-class>com.frxxz.servlet.schedule.ScheduleformServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScheduleFormSubmit</servlet-name>
+        <url-pattern>/schedule/schedule_form_submit</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.html</url-pattern>

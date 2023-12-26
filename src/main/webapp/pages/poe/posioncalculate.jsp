@@ -21,7 +21,7 @@
                     var formdata = $(this).serialize();
                     console.log(formdata)
                     $.ajax({
-                        url:'http://localhost:8080/frxxz/poisoncalculate',
+                        url:'http://localhost:8080/frxxz/poe/poisoncalculate',
                         type:'post',
                         data:formdata,
                         success:function (response){

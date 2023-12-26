@@ -1,4 +1,4 @@
-package com.frxxz.servlet;
+package com.frxxz.servlet.poe;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
