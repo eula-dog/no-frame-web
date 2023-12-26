@@ -5,6 +5,15 @@
          version="4.0">
 
     <servlet>
+        <servlet-name>JumpPoisonCalculatePageServlet</servlet-name>
+        <servlet-class>com.frxxz.servlet.JumpPoisonCalculatePageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JumpPoisonCalculatePageServlet</servlet-name>
+        <url-pattern>/jump-poisoncalculate-page</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>PoisonCalculateServlet</servlet-name>
         <servlet-class>com.frxxz.servlet.PoisonCalculateServlet</servlet-class>
     </servlet>
@@ -13,5 +22,13 @@
         <url-pattern>/poisoncalculate</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.html</url-pattern>
+        <url-pattern>*.jpg</url-pattern>
+        <url-pattern>*.js</url-pattern>
+        <url-pattern>*.png</url-pattern>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
 
 </web-app>

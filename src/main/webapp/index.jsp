@@ -10,11 +10,11 @@
     </style>
 </head>
 <body>
-<h1>首页</h1>
+<h1 align="center">首页</h1>
 <br>
 <br>
 <br>
 <br>
-<button>Poison Calculate</button>
+<button onclick="window.location.href='http://localhost:8080/frxxz/jump-poisoncalculate-page'">Poison Calculate</button>
 </body>
 </html>
