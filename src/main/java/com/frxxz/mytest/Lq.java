@@ -16,12 +16,11 @@ public class Lq {
                 "root",
                 "123456"
         );
-        System.out.println(connection);
 
         /*新增*/
         String sql ="insert into description (name,description) values (?,?)";
-        String name ="测试";
-        String describe = "ceshi";
+        String name ="测试3";
+        String describe = "ceshi3";
         //创建preparedStatement---防止SQL注入
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         preparedStatement.setString(1,name);

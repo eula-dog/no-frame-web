@@ -47,6 +47,15 @@
         <servlet-name>ScheduleFormSubmit</servlet-name>
         <url-pattern>/schedule/schedule_form_submit</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Description</servlet-name>
+        <servlet-class>com.frxxz.servlet.schedule.DescriptionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Description</servlet-name>
+        <url-pattern>/description</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.html</url-pattern>

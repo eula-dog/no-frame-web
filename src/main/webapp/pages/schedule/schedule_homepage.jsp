@@ -29,6 +29,32 @@
                     }
                 )
 
+                $("#select_one_description").click(
+                    function (event){
+                        console.log("select one description")
+                        var descriptionId = $('#descriptionId').val();
+                        console.log(descriptionId)
+                        var data = {
+                            id: descriptionId
+                        };
+                        $.ajax({
+                            url:'http://localhost:8080/frxxz/description?action=getOneDescription',
+                            type:'post',
+                            data:data,
+                            success:function (response) {
+                                console.log('---------------------')
+                                console.log(response)
+                                var jsonResponse = JSON.parse(response);
+                                $('#id').val(jsonResponse.id)
+                                $('#name').val(jsonResponse.name)
+                                $('#des').val(jsonResponse.description)
+                                console.log('---------------------')
+                            }
+                        })
+                        console.log('end...')
+                    }
+                )
+
             }
         )
     </script>
@@ -44,6 +70,19 @@
     3<input name="scheduleform_third"></form><br>
     <input type="submit"/><br>
 </form>
+
+<br>
+<br>
+<br>
+<form id='description'>
+    id<input id="id" name="descriptionId"></form>
+    name<input id="name" name="descriptionName"></form><br>
+    description<input id="des" name="descriptionDescription"></form><br>
+<input type="submit"/><br>
+</form>
+
+<input id="descriptionId">
+<button id="select_one_description">查询一条信息</button>
 
 </body>
 </html>
