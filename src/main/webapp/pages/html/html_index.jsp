@@ -73,7 +73,7 @@
                 <li> <a href="http://localhost:8080/frxxz/jump-poisoncalculate-page">poe</a></li>
                 <li><a href="http://localhost:8080/frxxz/jump-schedule-page">schedule</a></li>
                 <li>javaSE</li>
-                <li><a href="http://localhost:8080/frxxz/html?action=jumpHtml">html</a></li>
+                <li><a htrf="http://localhost:8080/frxxz/html?action=jumpHtml">html</a>></li>
                 <li>css</li>
                 <li>javascript</li>
             </ul>

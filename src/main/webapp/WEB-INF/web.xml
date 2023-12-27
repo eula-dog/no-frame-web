@@ -56,6 +56,26 @@
         <servlet-name>Description</servlet-name>
         <url-pattern>/description</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>com.frxxz.servlet.index.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>HtmlServlet</servlet-name>
+        <servlet-class>com.frxxz.servlet.html.HtmlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HtmlServlet</servlet-name>
+        <url-pattern>/html</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.html</url-pattern>

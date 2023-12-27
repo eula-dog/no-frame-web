@@ -75,8 +75,8 @@
 <br>
 <br>
 <form id='description'>
-    id<input id="id" name="descriptionId"></form>
-    name<input id="name" name="descriptionName"></form><br>
+    id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="id" name="descriptionId"></form>
+    name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="name" name="descriptionName"></form><br>
     description<input id="des" name="descriptionDescription"></form><br>
 <input type="submit"/><br>
 </form>
