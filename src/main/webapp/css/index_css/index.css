@@ -1,0 +1,161 @@
+/* 公共样式 */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0084ff;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: #fff;
+    height: 64px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0084ff;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 16px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0084ff;
+}
+
+/* 主体部分样式 */
+.container {
+    max-width: 1140px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+.question {
+    margin-bottom: 32px;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.question-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.question-content {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    display: none;
+}
+.question-content.show {
+    display: block;
+}
+
+
+.answer {
+    margin-bottom: 32px;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.answer-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 8px;
+}
+
+.author-info {
+    font-size: 14px;
+    color: #999;
+}
+
+.answer-content {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-top: 16px;
+}
+
+.answer-actions {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.action-item {
+    margin-right: 8px;
+}
+
+.upvote-btn {
+    display: flex;
+    align-items: center;
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+.upvote-btn:hover {
+    color: #0084ff;
+}
+
+.upvote-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.upvote-count {
+    font-size: 14px;
+    margin-left: 4px;
+}
