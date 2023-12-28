@@ -1,0 +1,57 @@
+body {
+    background-color: lightgrey; /* 将整个页面的背景颜色设置为灰色 */
+    margin: 0; /* 去掉默认外边距 */
+    padding: 0; /* 去掉默认内边距 */
+}
+#runoob-detail-nav{
+    background-color: aqua;
+    display: flex; /* 将 ul 元素变为弹性容器 */
+    justify-content: center; /* 沿主轴方向居中对齐 */
+    align-items: center; /* 沿交叉轴方向居中对齐 */
+    list-style: none; /* 去掉列表样式 */
+    margin: 0; /* 去掉默认外边距 */
+    padding: 0; /* 去掉默认内边距 */
+    width: 100%; /* 设置宽度为父元素的100% */
+}
+
+li {
+    margin-right: 10px; /* 为每个元素设置右外边距，使它们之间有间隔 */
+}
+
+#index_catalogue{
+    list-style-type: none; /* 将列表样式设置为无样式 */
+    margin: 0; /* 去掉默认外边距 */
+    padding: 0; /* 去掉默认内边距 */
+
+    position: fixed; /* 设置导航条为固定定位 */
+    /*top: 50%; /* 将导航条向下移动50%的高度 */
+    /*transform: translateY(-50%); /* 使用 transform 属性将导航条再向上移动50%的高度，以居中对齐 */
+    left: 60px; /* 将导航条距离左侧边距离设为20px */
+}
+
+ iframe {
+     position: absolute;
+     top: 120px;
+     left: 280px;
+     background-color: aquamarine;
+ }
+
+
+
+body {
+    background-image: url("/frxxz/static/imgs/java/a.jpeg");
+    background-size: cover; /* 可选，使背景图片铺满整个页面 */
+    /* 其他背景属性，如颜色、重复jjjj方式等 */
+}
+
+#main_internal_frame {
+    background-color:white;
+    border: 1px solid #000000;
+
+    position: absolute;
+    top: 150px;
+    left: 150px;
+
+    width: 500px;
+    height: 200px;
+}

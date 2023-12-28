@@ -18,6 +18,13 @@ public class CatalogueBean {
         this.href = href;
     }
 
+    public CatalogueBean(String name, int type, int level, String href) {
+        this.name = name;
+        this.type = type;
+        this.level = level;
+        this.href = href;
+    }
+
     public int getId() {
         return id;
     }

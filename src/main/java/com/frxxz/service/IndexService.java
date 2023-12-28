@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class IndexService {
 
     private IndexDao indexDao = new IndexDao();
-    public ArrayList<CatalogueBean> getAllIndexCatalogue() throws SQLException {
-        return indexDao.getAllIndexCatalogue();
+    public ArrayList<CatalogueBean> getAllIndexCatalogue(int id) throws SQLException {
+        return indexDao.getAllIndexCatalogue(id);
     }
 }

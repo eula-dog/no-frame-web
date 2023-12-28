@@ -76,6 +76,24 @@
         <url-pattern>/html</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>CssServlet</servlet-name>
+        <servlet-class>com.frxxz.servlet.css.CssServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CssServlet</servlet-name>
+        <url-pattern>/css</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CatalogueServlet</servlet-name>
+        <servlet-class>com.frxxz.servlet.catalogue.CatalogueServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CatalogueServlet</servlet-name>
+        <url-pattern>/catalogue</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.html</url-pattern>
@@ -83,6 +101,7 @@
         <url-pattern>*.js</url-pattern>
         <url-pattern>*.png</url-pattern>
         <url-pattern>*.css</url-pattern>
+        <url-pattern>*.jpeg</url-pattern>
     </servlet-mapping>
 
 </web-app>
