@@ -1,6 +1,7 @@
 package com.frxxz.dao;
 
 import com.frxxz.bean.CatalogueBean;
+import com.frxxz.bean.IndexQuestionBean;
 import com.frxxz.util.SqlUtil;
 
 import java.sql.Connection;
@@ -30,6 +31,35 @@ public class IndexDao {
             result.add(catalogueBean);
         }
 
+        return result;
+    }
+
+    public boolean addQuestion(IndexQuestionBean indexQuestionBean) throws SQLException {
+
+        String sql = "insert into todo (name,description) values (?,?)";
+        PreparedStatement preparedStatement = con.prepareStatement(sql);
+        preparedStatement.setString(1,indexQuestionBean.getName());
+        preparedStatement.setString(2,indexQuestionBean.getDescription());
+        int result = preparedStatement.executeUpdate();
+
+        return result>0;
+    }
+
+    public ArrayList<IndexQuestionBean> getIndexQuestion() throws SQLException {
+
+        ArrayList<IndexQuestionBean> result = new ArrayList<>();
+        String sql = "select * from todo";
+        PreparedStatement preparedStatement = con.prepareStatement(sql);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        while(resultSet.next()){
+            int cid = resultSet.getInt("id");
+            String name = resultSet.getString("name");
+            String content = resultSet.getString("description");
+            IndexQuestionBean catalogueBean = new IndexQuestionBean(cid,name,content);
+            result.add(catalogueBean);
+        }
         return result;
     }
 }
