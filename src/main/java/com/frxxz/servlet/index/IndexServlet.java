@@ -2,6 +2,7 @@ package com.frxxz.servlet.index;
 
 import com.alibaba.fastjson.JSON;
 import com.frxxz.bean.CatalogueBean;
+import com.frxxz.bean.CommentBean;
 import com.frxxz.bean.IndexQuestionBean;
 import com.frxxz.service.IndexService;
 import com.frxxz.servlet.BaseServlet;
@@ -12,7 +13,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Map;
 
 public class IndexServlet extends BaseServlet {
@@ -39,7 +42,10 @@ public class IndexServlet extends BaseServlet {
         String name = request.getParameter("name");
         String content = request.getParameter("content");
 
-        IndexQuestionBean indexQuestionBean = new IndexQuestionBean(name,content);
+        Date currentDateTime = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateFormat = simpleDateFormat.format(currentDateTime);
+        IndexQuestionBean indexQuestionBean = new IndexQuestionBean(name,content,dateFormat);
 
         boolean flag = indexService.addQuestion(indexQuestionBean);
 
@@ -66,5 +72,18 @@ public class IndexServlet extends BaseServlet {
         String cataStr = JSON.toJSONString(indexQuestionBeans);
 
         response.getWriter().write(cataStr);
+    }
+
+
+    public void selectCommentsByQuestionId(HttpServletRequest request,HttpServletResponse response) throws SQLException, IOException {
+
+        int id = Integer.parseInt(request.getParameter("id"));
+
+        ArrayList<CommentBean> commentBeans = indexService.selectCommentsByQuestionId(id);
+
+        String resStr = JSON.toJSONString(commentBeans);
+
+        response.getWriter().write(resStr);
+
     }
 }

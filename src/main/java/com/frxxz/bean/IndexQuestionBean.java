@@ -4,6 +4,7 @@ public class IndexQuestionBean {
     private int id;
     private String name;
     private String description;
+    private String datetime;
 
     public IndexQuestionBean() {
     }
@@ -19,6 +20,20 @@ public class IndexQuestionBean {
         this.description = description;
     }
 
+    public IndexQuestionBean(int id, String name, String description, String datetime) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.datetime = datetime;
+    }
+
+    public IndexQuestionBean(String name, String description, String datetime) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.datetime = datetime;
+    }
+
     public int getId() {
         return id;
     }
@@ -29,6 +44,14 @@ public class IndexQuestionBean {
 
     public String getName() {
         return name;
+    }
+
+    public String getDatetime() {
+        return datetime;
+    }
+
+    public void setDatetime(String datetime) {
+        this.datetime = datetime;
     }
 
     public void setName(String name) {
@@ -49,6 +72,7 @@ public class IndexQuestionBean {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
+                ", datetime='" + datetime + '\'' +
                 '}';
     }
 }

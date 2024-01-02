@@ -65,11 +65,40 @@ h2 {
     color: #999;
 }
 
+.add-comment{
+    border: 1px solid #ccc;
+    margin-top: 16px;
+    /*padding-left: 16px;*/
+    display: none;
+}
+#add-comment-input{
+    /*border: #ccc;*/
+    position:  relative;
+    top: 0%;
+    left: 0%;
+    width: 99%;
+}
+#add-comment-btn{
+    position: relative;
+    top:20%;
+    left:96%;
+    background-color: #0084ff;
+    color: #fff;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .comment-list {
+    border: 1px solid #ccc;
     margin-top: 16px;
     padding-left: 16px;
     display: none;
 }
+
 
 .comment {
     font-size: 14px;
@@ -82,7 +111,7 @@ h2 {
     font-size: 14px;
     color: #999;
     text-decoration: none;
-    margin-left: 16px;
+    margin-left: 0%;
     cursor: pointer;
 }
 
