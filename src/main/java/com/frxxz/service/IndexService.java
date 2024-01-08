@@ -28,4 +28,8 @@ public class IndexService {
     public ArrayList<CommentBean> selectCommentsByQuestionId(int id) throws SQLException {
         return indexDao.selectCommentsByQuestionId(id);
     }
+
+    public Boolean addCommentByQuestionId(CommentBean commentBean) throws SQLException {
+        return indexDao.addCommentByQuestionId(commentBean);
+    }
 }

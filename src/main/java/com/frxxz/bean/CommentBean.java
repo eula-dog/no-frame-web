@@ -16,6 +16,11 @@ public class CommentBean {
         this.time = time;
     }
 
+    public CommentBean(int questionId ,String comment, String time) {
+        this.questionId = questionId;
+        this.comment = comment;
+        this.time = time;
+    }
     public CommentBean(int id, String comment, int type, String time, int questionId) {
         this.id = id;
         this.comment = comment;

@@ -85,4 +85,17 @@ public class IndexDao {
         }
         return result;
     }
+
+    public Boolean addCommentByQuestionId(CommentBean commentBean) throws SQLException {
+
+        String sql = "insert into comment(comment,time,question_id) values(?,?,?)";
+
+        PreparedStatement preparedStatement = con.prepareStatement(sql);
+        preparedStatement.setString(1,commentBean.getComment());
+        preparedStatement.setString(2,commentBean.getTime());
+        preparedStatement.setInt(3,commentBean.getQuestionId());
+
+        int result = preparedStatement.executeUpdate();
+        return result>0;
+    }
 }

@@ -86,4 +86,33 @@ public class IndexServlet extends BaseServlet {
         response.getWriter().write(resStr);
 
     }
+
+
+    public void addIndexQuestionComment(HttpServletRequest request,HttpServletResponse response) throws SQLException, IOException {
+        System.out.println("addIndexQuestionComment");
+
+        String questionId = request.getParameter("questionId");
+        String comment = request.getParameter("comment");
+        String time = request.getParameter("time");
+
+        CommentBean commentBean = new CommentBean(Integer.parseInt(questionId),comment,time);
+
+        System.out.println(commentBean);
+
+        Boolean flag = indexService.addCommentByQuestionId(commentBean);
+
+        if(flag){
+            response.setStatus(HttpServletResponse.SC_OK);
+            response.setContentType("application/json");
+            PrintWriter out = response.getWriter();
+            out.print("{\"success\": true, \"message\": \"请求成功\"}");
+            out.flush();
+        }else {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.setContentType("application/json");
+            PrintWriter out = response.getWriter();
+            out.print("{\"success\": false, \"message\": \"请求失败\"}");
+            out.flush();
+        }
+    }
 }
