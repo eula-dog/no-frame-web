@@ -115,4 +115,18 @@ public class IndexServlet extends BaseServlet {
             out.flush();
         }
     }
+
+
+
+    public void goToConceptIndex(HttpServletRequest request,HttpServletResponse response) throws Exception {
+       //response.sendRedirect("http://localhost:8080/frxxz/concept?action=goToConceptIndex");
+
+        request.getRequestDispatcher("/pages/concept/concept_index.jsp").forward(request,response);
+    }
+
+    //goToScheduleIndex
+    public void goToScheduleIndex(HttpServletRequest request,HttpServletResponse response) throws Exception {
+        //response.sendRedirect("http://localhost:8080/frxxz/concept?action=goToConceptIndex");
+        request.getRequestDispatcher("/pages/schedule/schedule_index.jsp").forward(request,response);
+    }
 }

@@ -1,0 +1,38 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 设置容器高度为视口高度 */
+}
+
+form {
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 20px; /* 设置内边距 */
+    max-width: 400px; /* 设置最大宽度 */
+    width: 100%; /* 设置宽度为父容器的100% */
+}
+
+form label,
+form input,
+form select,
+form button {
+    display: block; /* 将表单元素设置为块级元素，每个元素占据一行 */
+    margin-bottom: 10px; /* 设置下边距 */
+}
+
+form label {
+    font-weight: bold; /* 设置标签文本加粗 */
+}
+
+
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}

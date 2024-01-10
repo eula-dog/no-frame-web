@@ -1,0 +1,24 @@
+#schedule-select-result-table{
+    margin: 0 auto;
+    border-collapse: collapse; /* 合并相邻单元格的边框 */
+    border: 2px solid lightblue; /* 设置表格边框样式 */
+}
+
+#schedule-select-result-table th,
+#schedule-select-result-table td {
+    border: 1px solid lightblue; /* 设置单元格边框样式 */
+    padding: 8px; /* 设置单元格内边距 */
+    text-align: center;
+}
+
+.time-column{
+    width: 250px;
+}
+
+.schedule-column{
+    width: 200px;
+}
+
+.detail-column{
+    width: 600px;
+}

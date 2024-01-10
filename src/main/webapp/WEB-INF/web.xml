@@ -94,6 +94,26 @@
         <servlet-name>CatalogueServlet</servlet-name>
         <url-pattern>/catalogue</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ConceptServlet</servlet-name>
+        <servlet-class>com.frxxz.servlet.concept.ConceptServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConceptServlet</servlet-name>
+        <url-pattern>/concept</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ScheduleServlet</servlet-name>
+        <servlet-class>com.frxxz.servlet.schedule.ScheduleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScheduleServlet</servlet-name>
+        <url-pattern>/schedule</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.html</url-pattern>
